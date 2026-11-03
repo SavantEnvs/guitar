@@ -1,0 +1,8 @@
+project: savantenvs/guitar
+target: fuzz_gitpack
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_gitpack/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_gitpack
+    libfuzzer: true
